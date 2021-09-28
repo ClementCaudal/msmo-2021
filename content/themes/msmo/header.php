@@ -43,12 +43,12 @@
     <section class="section-header slogan">
         <div class="slogan-bar container">
             <div class="row">
-                <div class="offset-4 col-md-4">
+                <div class="offset-lg-3 offset-xl-4 col-lg-5 col-xl-4">
                     <ul class="slogan">
                         <li><img src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/images/slogan.png'; ?>"></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <ul class="logos-ffbb">
                         <li><a href="https://resultats.ffbb.com/organisation/234c.html" target="_blank" title="Lien MSMO FFBB"><img src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/images/logo/logo-ffbb.png'; ?>"></a></li>
                         <li><a href="https://www.basketsarthe.org/" target="_blank" title="Lien FFBB Sarthe"><img src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/images/logo/logo-ffbb-sarthe.png'; ?>"></a></li>
@@ -68,7 +68,7 @@
                         <a class="logo logo-large" href=""><h1><img class="position-absolute" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/images/logo/logo_x_large.png'; ?>"></h1></a>
                         <a class="logo logo-small hidden" href=""><h1><img class="position-absolute" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/images/logo/logo_xx_small.png'; ?>"></h1></a>
                     </div>
-                    <div class="col-md-9 col-xl-8 position-static">
+                    <div class="col-lg-8 col-xl-9 offset-lg-1 offset-xl-0 position-static">
                         <ul>
                             <li id="menu_item_home" class="menu-item current-menu"><a href="#">accueil</a></li>
                             <li id="menu_item_club" class="menu-item"><a href="#">club</a></li>

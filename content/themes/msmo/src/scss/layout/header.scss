@@ -296,27 +296,18 @@ header{
 
           li {
             display: inline-block;
-            position: relative;
-            padding: 0 10px;
 
             a {
-              color: $blue-200;
-              padding: 0 5px;
-              margin-top: 2px;
-              display: inline-block;
-              line-height: 40px;
+              font-family: "Helvetica Neue Condensed";
               font-size: 14px;
               font-weight: 700;
+              color: #9FA2BF;
+              padding: 10px 15px;
+              display: inline-block;
               text-transform: uppercase;
               text-decoration: none;
 
-              &.a-current {
-                color: $dark-blue;
-              }
-            }
-
-            &:hover {
-              a {
+              &.current, &:hover {
                 color: $dark-blue;
               }
             }

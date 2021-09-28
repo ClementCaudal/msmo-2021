@@ -1,165 +1,59 @@
 .accueil {
-  @include media-breakpoint-down(lg) {
-    background-color: $background-gray;
-  }
+  .carousel-home-container {
+    .carousel {
+      height: 70vh;
 
-  .video-container {
-    height: calc(100vh - 161px);
-    overflow: hidden;
-
-    #video-presentation {
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
-    }
-  }
-
-
-  .presentation-mobile-container {
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    bottom: 10%;
-    left: 20px;
-
-    .title-slogan {
-      color: $white;
-      line-height: 76px;
-    }
-  }
-
-  .presentation-img-mobile {
-    object-fit: cover;
-    height: 60vh;
-    width: 100%;
-  }
-
-  .services-container {
-    .btn {
-      position: absolute;
-      bottom: 5%;
-    }
-
-    .service-container {
-      .service-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-transform: uppercase;
-        font-family: "Helvetica Neue";
-        font-size: 16px;
-        font-weight: 300;
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-
-        .link-xs {
-          color: $gray-900;
-          border-bottom-color: $gray-900;
-
-          &:hover {
-            color: $primary;
-            border-bottom-color: $primary;
-          }
-        }
-      }
-
-      &:hover {
-        color: $primary;
-        cursor: pointer;
-
-        h3, .link-xs {
-          color: $primary;
-        }
-
-        .link-xs {
-          border-bottom-color: $primary;
-        }
-      }
-    }
-  }
-
-  .services-container-mobile {
-    font-size: 16px;
-
-    .col-6 {
-      &:first-child > .service-container {
-        background-image: url("../images/service-entretien-reparation.jpg");
-      }
-
-      &:last-child > .service-container {
-        background-image: url("../images/service-estimation-reprise.jpg");
-      }
-    }
-
-    .service-container {
-      background-size: cover;
-      height: 260px;
-      border-radius: 10px;
-
-      .service-content {
+      .carousel-inner {
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-left: 20px;
-        padding-bottom: 20px;
-
-        .border-service {
-          height: 2px;
-          width: 30px;
-          background-color: $white;
-        }
-
-        span {
-          color: $white;
-          font-weight: normal;
-          width: 110px;
-
-          &.service-info {
-            font-size: 14px;
-            margin-bottom: 25px;
-          }
-
-          &.service-title {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
-
-
-  .road-trip-container {
-    display: flex;
-    flex-direction: row;
-    background-image: url("../images/roadtrip-bg.jpg");
-    background-repeat: no-repeat;
-    padding-top: 130px;
-    color: $white;
-    font-size: 16px;
-
-    @include media-breakpoint-down(md) {
-      background: none;
-      padding-top: 0;
-      color: $gray-600;
-    }
-
-    h3, p {
-      color: $white;
-
-      @include media-breakpoint-down(md) {
-        color: $gray-900;
       }
     }
 
-    p {
-      width: 50%;
+    .carousel-nav-container {
+      list-style: none;
+      padding: 20px 0;
+      height: 70vh;
+      background-color: rgba(64, 68, 126, 0.7);
+      position: absolute;
+      width: 260px;
+      top: 0;
+      left: 100%;
+      margin-bottom: 0;
+      margin-left: -27%;
+
+      .carousel-nav-item-container {
+        height: 150px;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &.active {
+          background-color: $dark-blue;
+        }
+
+        .carousel-nav-item-title {
+          font-family: 'Helvetica Neue Condensed';
+          display: inline-block;
+          margin: 0 0 10px 0;
+          background: $white;
+          color: $dark-blue;
+          line-height: 30px;
+          padding: 0 10px;
+          font-weight: bold;
+        }
+
+        .carousel-nav-item-content {
+          padding: 0 15px 0 30px;
+
+          p {
+            color: white;
+            font-weight: bold;
+            font-family: 'Helvetica Neue Condensed';
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: end;
+          }
+        }
+      }
     }
   }
 }
