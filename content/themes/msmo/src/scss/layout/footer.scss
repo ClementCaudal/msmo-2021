@@ -1,0 +1,46 @@
+footer {
+  bottom: 0;
+  width: 100%;
+  background: $dark-blue;
+
+  .footer-border-top {
+    background: $white;
+    text-align: center;
+  }
+
+  .footer-border-bottom {
+    background: $white;
+    text-align: center;
+    color: $dark-blue;
+    font-weight: bold;
+  }
+
+  .footer-border-medium {
+    &:before {
+    }
+  }
+
+  .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white;
+    @include media-breakpoint-down(lg) {
+      max-width: 1300px;
+    }
+
+    #map {
+      height: 250px;
+      max-height: 250px;
+    }
+
+    .leaflet-container {
+      position: center;
+    }
+
+    .footer-col-left {
+      img {
+        width: max-content;
+      }
+    }
+  }
+}

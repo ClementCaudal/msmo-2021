@@ -1,0 +1,39 @@
+#fichiers systemes
+.bash_history
+.bash_profile
+.ssh/
+
+# ignore log file
+log/
+debug.log
+*.log
+
+# ignore version-checker files
+version-checker/
+
+# ignore nodejs files
+node_modules
+
+# ignore replace module
+replace
+
+# ignore upload file
+wp-content/uploads/*
+content/uploads/*
+!content/uploads/.htaccess
+
+# W3 Total cache
+content/advanced-cache.php
+content/cache/
+content/db.php
+content/object-cache.php
+content/w3tc-config/
+
+# ignore folder idea Phpstorm
+*.idea
+
+# fichier ini
+config.ini
+
+# fichier robots.txt
+robots.txt

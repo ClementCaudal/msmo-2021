@@ -1,0 +1,20 @@
+{
+  "globals": {
+    "jQuery": true,
+    "$": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "no-underscore-dangle": "off",
+    "no-tabs": "off",
+    "padded-blocks": "off",
+    "indent": "off",
+    "newline-per-chained-call": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "func-names": "off",
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "web-starter-jc",
+  "version": "2.4.0",
+  "description": "Starter kit for markup projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justcoded/web-starter-kit"
+  },
+  "keywords": [
+    "starter",
+    "markup",
+    "JustCoded",
+    "jc"
+  ],
+  "author": "JustCoded",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justcoded/web-starter-kit/issues"
+  },
+  "homepage": "https://github.com/justcoded/web-starter-kit",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.3",
+    "browserify": "^16.5.2",
+    "del": "^5.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "files-exist": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-debug": "^4.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlhint": "^2.2.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "htmlhint-stylish": "^1.0.3",
+    "path": "^0.12.7",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "gulp build",
+    "production": "gulp build",
+    "start": "gulp"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-multiselect": "^0.9.15",
+    "bootstrap-select": "^1.13.18",
+    "hamburgers": "^1.1.3",
+    "imagesloaded": "^4.1.4",
+    "include-media": "^1.4.10",
+    "ion-rangeslider": "^2.3.1",
+    "jpegtran-bin": "^5.0.2",
+    "jquery": "^3.6.0",
+    "leaflet": "^1.7.1",
+    "masonry-layout": "^4.2.2",
+    "normalize.css": "^8.0.1",
+    "optipng-bin": "^7.0.0",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.16.1",
+    "scrollreveal": "^4.0.9"
+  }
+}

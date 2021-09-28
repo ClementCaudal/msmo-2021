@@ -1,0 +1,190 @@
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/Helvetica-Black/HelveticaNeue-BlackCond.woff2') format("woff2");
+	font-weight: 1000;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/Helvetica-Black/HelveticaNeue-BlackCondObl.otf') format("opentype");
+	font-weight: 1000;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/Helvetica-Bold/HelveticaNeue-BoldCond.woff2') format("woff2");
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/Helvetica-Bold/HelveticaNeue-BoldCondObl.otf') format("opentype");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue';
+	src: url('../webfonts/HelveticaNeue-Light.woff2') format("woff2");
+	font-weight: 100;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/HelveticaNeue-MediumCond.woff2') format("woff2");
+	font-weight: normal;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/HelveticaNeue-MediumCondObl.woff2') format("woff2");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue Condensed';
+	src: url('../webfonts/HelveticaNeue-RegularCond.woff2') format("woff2");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Helvetica Neue';
+	src: url('../webfonts/HelveticaNeue-Roman.woff2') format("woff2");
+	font-weight: 300;
+	font-display: swap;
+}
+
+body{
+	font-family: "Helvetica Neue Condensed";
+	font-weight: 300;
+	font-size: 16px;
+	color: $gray-900;
+
+	@include media-breakpoint-down(sm){
+		font-size: 14px;
+		color: $gray-600;
+	}
+
+	.title-xxl{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: bold;
+		font-size: 77px;
+		text-transform: uppercase;
+		color: $gray-900;
+
+		@include media-breakpoint-down(sm){
+			font-size: 60px;
+		}
+	}
+
+	.title-1{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: bold;
+		font-size: 48px;
+		text-transform: uppercase;
+		color: $gray-900;
+	}
+
+	.title-2{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: bold;
+		font-size: 36px;
+		color: $gray-900;
+
+		@include media-breakpoint-down(sm){
+			font-family: "Helvetica Neue Condensed";
+			font-weight: bold;
+			font-size: 20px;
+		}
+	}
+
+	.title-3{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: normal;
+		font-size: 26px;
+		color: $gray-900;
+
+		@include media-breakpoint-down(sm){
+			font-family: "Helvetica Neue Condensed";
+			font-weight: normal;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+
+	footer{
+		.title-2{
+			color: $white;
+		}
+	}
+
+	.title-light{
+		color: $white;
+	}
+
+	p{
+		font-family: "Helvetica Neue";
+		font-weight: 300;
+		font-size: 16px;
+		color: #727272;
+
+		@include media-breakpoint-down(sm){
+			font-size: 14px;
+		}
+	}
+
+	small{
+		font-family: "Helvetica Neue";
+		font-weight: 300;
+		font-size: 10px;
+		color: #373737;
+	}
+
+	b{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: bold;
+		font-size: 16px;
+		color: $gray-900;
+
+		@include media-breakpoint-down(sm){
+			font-size: 14px;
+		}
+	}
+
+	select{
+		font-family: "Helvetica Neue Condensed";
+		font-weight: normal;
+		font-size: 14px;
+		color: $gray-900;
+	}
+
+	a{
+		font-family: "Helvetica Neue";
+		font-weight: bold;
+		font-size: 16px;
+		color: $primary;
+
+		@include media-breakpoint-down(sm){
+			font-size: 14px;
+		}
+	}
+
+	.container-lg{
+		max-width: 1600px;
+	}
+
+	.light{
+		color: $gray-600;
+	}
+}
