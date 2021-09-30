@@ -8153,10 +8153,10 @@ header {
       background-repeat: repeat;
       background-color: #000653; }
 
-.accueil .carousel-home-container .carousel {
-  height: 70vh; }
-  .accueil .carousel-home-container .carousel .carousel-inner {
-    height: 100%; }
+.accueil .carousel-home-container .carousel .carousel-inner .carousel-item {
+  height: 70vh;
+  background-position: top;
+  background-size: cover; }
 
 .accueil .carousel-home-container .carousel-nav-container {
   list-style: none;

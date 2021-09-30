@@ -1,10 +1,12 @@
 .accueil {
   .carousel-home-container {
     .carousel {
-      height: 70vh;
-
       .carousel-inner {
-        height: 100%;
+        .carousel-item {
+          height: 70vh;
+          background-position: top;
+          background-size: cover;
+        }
       }
     }
 

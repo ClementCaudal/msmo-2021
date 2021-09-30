@@ -5,17 +5,19 @@
 const header = (() => {
 
     const init = () => {
-        if ($(document).scrollTop() >= 100) {
-            $('.menu-navbar').addClass('scroll-active');
-            $('.menu-header').addClass('scroll-active');
-            $('.logo-large').addClass('hidden');
-            $('.logo-small').removeClass('hidden');
-        } else {
-            $('.menu-navbar').removeClass('scroll-active');
-            $('.menu-header').removeClass('scroll-active');
-            $('.logo-large').removeClass('hidden');
-            $('.logo-small').addClass('hidden');
-        }
+        $(window).scroll(() => {
+            if ($(document).scrollTop() >= 100) {
+                $('.menu-navbar').addClass('scroll-active');
+                $('.menu-header').addClass('scroll-active');
+                $('.logo-large').addClass('hidden');
+                $('.logo-small').removeClass('hidden');
+            } else {
+                $('.menu-navbar').removeClass('scroll-active');
+                $('.menu-header').removeClass('scroll-active');
+                $('.logo-large').removeClass('hidden');
+                $('.logo-small').addClass('hidden');
+            }
+        });
 
         $('.menu-item').mouseenter((event) => {
             $('.menu-navbar').show();
