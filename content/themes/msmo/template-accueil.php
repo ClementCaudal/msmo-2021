@@ -17,7 +17,7 @@ $slides = get_field('home_slider');
 ?>
 
 <main class="accueil">
-    <div class="carousel-home-container mb-4">
+    <div class="carousel-home-container mb-5">
         <div id="carousel-home-slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <!--                        {% for slide in slides|sort((a, b) => a.numberSlide <=> b.numberSlide) if ((slide.dateStart|date("Y/m/d") <= "now"|date("Y/m/d")) and (slide.dateEnd|date("Y/m/d") >= "now"|date("Y/m/d"))) %}-->
@@ -29,6 +29,10 @@ $slides = get_field('home_slider');
 						$slide_link = get_sub_field('home_slide_link');
 						$slide_type_link = get_sub_field('home_slide_type_link');
                         $slide_index = get_row_index() - 1;
+                        $slide_title = str_replace('<br>', ' ', get_sub_field('home_slide_title'));
+                        $slide_libelle = get_sub_field('home_slide_libelle');
+                        $slide_text = get_sub_field('home_slide_text');
+
                         if ($slide_index === 0) {
                             $data_position = 'first';
                         } else if ($slide_index === count($slides) - 1) {
@@ -38,46 +42,34 @@ $slides = get_field('home_slider');
                         }
                 ?>
                         <a href="<?php echo $slide_link; ?>" class="carousel-item <?php echo $slide_index === 0 ? 'active' : ''; ?>" data-slide="<?php echo $slide_index;?>" data-position="<?php echo $data_position; ?>" style="background-image: url('<?php echo $slide_picture_desktop['url']; ?>')" target="<?php echo $slide_type_link === 'externe' ? '_blank' : ''; ?>">
-        <!--                    <div class="d-flex flex-row no-gutters">-->
-        <!--                        <div class="col-md-8 crop-img">-->
-        <!--                            <img class="carousel-img" src="/content/uploads/test.jpg" alt="{{ slide.fileNameImage }}" onclick="window.open('{{ asset('pdf/slides/'~slide.fileNamePDF) }}')">-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-4 d-flex flex-row">-->
-        <!--                            <div class="carousel-caption d-none d-md-block">-->
-        <!--                                <img class="mb-3" src="/content/uploads/test.jpg" alt="{{ slide.logoSlide }}">-->
-        <!--                                <p>{{ slide.subTitle }}</p>-->
-        <!--                                <p>{{ slide.description }}</p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
+                            <div class="carousel-item-container">
+                                <div class="container">
+                                    <div class="col-md-6 col-12">
+                                        <div class="row">
+                                            <p class="carousel-item-libelle"><?php echo $slide_libelle; ?></p>
+                                            <div class="carousel-item-content">
+                                                <h2 class="carousel-item-title">
+                                                    <?php echo $slide_title; ?>
+                                                </h2>
+                                                <p class="carousel-item-text">
+                                                    <?php echo $slide_text; ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </a>
                     <?php endif; ?>
                 <?php endwhile; ?>
-<!--                <a href="#" class="carousel-item" data-slide="1" data-position="last" style="background-image: url('/content/uploads/test.jpg')">-->
-                    <!--                    <div class="d-flex flex-row no-gutters">-->
-                    <!--                        <div class="col-md-8 crop-img">-->
-<!--                    <img class="carousel-img" src="/content/uploads/test.jpg" alt="{{ slide.fileNameImage }}" onclick="window.open('{{ asset('pdf/slides/'~slide.fileNamePDF) }}')">-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-md-4 d-flex flex-row">-->
-                    <!--                            <div class="carousel-caption d-none d-md-block">-->
-                    <!--                                <img class="mb-3" src="/content/uploads/test.jpg" alt="{{ slide.logoSlide }}">-->
-                    <!--                                <p>{{ slide.subTitle }}</p>-->
-                    <!--                                <p>{{ slide.description }}</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-<!--                </a>-->
-                <!--                        {% endfor %}-->
             </div>
             <ul class="carousel-nav-container pt-3 pb-3">
-<!--                {% set index_slide = 1 %}-->
-<!--                {% for slide in slides|sort((a, b) => a.numberSlide <=> b.numberSlide) if ((slide.dateStart|date("Y/m/d") <= "now"|date("Y/m/d")) and (slide.dateEnd|date("Y/m/d") >= "now"|date("Y/m/d"))) %}-->
                 <?php while (have_rows('home_slider')): the_row();
                     $slide_enable = get_sub_field('home_slide_enable');
                     if ($slide_enable):
                         $slide_title = get_sub_field('home_slide_title');
                         $slide_libelle = get_sub_field('home_slide_libelle');
-                        $slide_text = get_sub_field('home_slide_text');
+                        $slide_description = get_sub_field('home_slide_description');
 						$slide_index = get_row_index() - 1;
 						if ($slide_index === 0) {
 							$data_position = 'first';
@@ -95,15 +87,17 @@ $slides = get_field('home_slider');
                         </li>
                     <?php endif; ?>
                 <?php endwhile; ?>
-<!--                <li class="carousel-nav-item-container" data-target="#carousel-home-slider" data-slide-to="1" data-position="last">-->
-<!--                    <p class="carousel-nav-item-title">Boutique</p>-->
-<!--                    <div class="carousel-nav-item-content">-->
-<!--                        <p>Boutique officielle<br>MSMO - 2021</p>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                {% set index_slide = index_slide + 1 %}-->
-<!--                {% endfor %}-->
             </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row facebook-infos-container">
+            <div class="col-6">
+                <iframe width="500" height="500" src="https://www.instagram.com/msmo_basket/embed" frameborder="0"></iframe>
+            </div>
+            <div class="col-6">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMSMO-Les-Mouettes-515010178569109&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=443397193094383" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
         </div>
     </div>
 </main>

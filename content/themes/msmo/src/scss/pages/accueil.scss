@@ -3,9 +3,45 @@
     .carousel {
       .carousel-inner {
         .carousel-item {
+          color: $white;
           height: 70vh;
           background-position: top;
           background-size: cover;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          .carousel-item-container {
+            padding: 286px 0 60px 0;
+            height: 581px;
+
+            .carousel-item-libelle {
+              font-family: 'Helvetica Neue Condensed';
+              display: inline-block;
+              background: $white;
+              color: $dark-blue;
+              line-height: 30px;
+              padding: 0 10px;
+              font-weight: bold;
+              margin-bottom: 0;
+            }
+
+            .carousel-item-content {
+              height: 210px;
+              width: 100%;
+              overflow: hidden;
+              display: inline-block;
+              padding: 15px;
+              background-color: rgba(64, 68, 126, 0.7);
+
+              .carousel-item-title {
+                font-size: 44px;
+                font-weight: 700;
+                color: $white;
+              }
+            }
+          }
         }
       }
     }
@@ -35,7 +71,7 @@
         .carousel-nav-item-title {
           font-family: 'Helvetica Neue Condensed';
           display: inline-block;
-          margin: 0 0 10px 0;
+          margin-bottom: 10px;
           background: $white;
           color: $dark-blue;
           line-height: 30px;
@@ -53,6 +89,7 @@
             font-size: 18px;
             text-transform: uppercase;
             text-align: end;
+            text-indent: 0;
           }
         }
       }
