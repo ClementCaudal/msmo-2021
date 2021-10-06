@@ -93,10 +93,10 @@ $slides = get_field('home_slider');
     <div class="container">
         <div class="row facebook-infos-container">
             <div class="col-6">
-                <iframe width="500" height="500" src="https://www.instagram.com/msmo_basket/embed" frameborder="0"></iframe>
+
             </div>
             <div class="col-6">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMSMO-Les-Mouettes-515010178569109&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=443397193094383" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
             </div>
         </div>
     </div>

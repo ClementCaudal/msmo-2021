@@ -255,8 +255,12 @@ header{
 
     &.scroll-active {
       position: fixed;
-      top: 0;
       width: 100%;
+      top: 0;
+
+      a.logo {
+        margin-top: 0;
+      }
     }
 
     .container {
@@ -266,11 +270,17 @@ header{
     }
 
     a.logo {
-      margin-top: -120px;
       margin-bottom: 0;
       display: table;
       position: relative;
       z-index: 30;
+      -webkit-transition: 400ms;
+      -o-transition: 400ms;
+      transition: 400ms;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: -120px;
+      }
 
       &.logo-small {
         margin-top: 2px;

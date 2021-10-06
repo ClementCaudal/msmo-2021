@@ -7777,8 +7777,7 @@ body {
   body p {
     font-family: "Helvetica Neue";
     font-weight: 300;
-    font-size: 16px;
-    color: #727272; }
+    font-size: 16px; }
     @media (max-width: 767.98px) {
       body p {
         font-size: 14px; } }
@@ -8040,17 +8039,22 @@ header {
     z-index: 40; }
     header .menu-header.scroll-active {
       position: fixed;
-      top: 0;
-      width: 100%; }
+      width: 100%;
+      top: 0; }
+      header .menu-header.scroll-active a.logo {
+        margin-top: 0; }
     @media (min-width: 992px) {
       header .menu-header .container {
         max-width: 1300px; } }
     header .menu-header a.logo {
-      margin-top: -120px;
       margin-bottom: 0;
       display: table;
       position: relative;
-      z-index: 30; }
+      z-index: 30;
+      transition: 400ms; }
+      @media (min-width: 992px) {
+        header .menu-header a.logo {
+          margin-top: -120px; } }
       header .menu-header a.logo.logo-small {
         margin-top: 2px; }
       header .menu-header a.logo.hidden {
