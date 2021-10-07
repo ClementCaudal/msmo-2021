@@ -95,4 +95,76 @@
       }
     }
   }
+
+  .next-matches-container {
+    .title-2 {
+      margin: 0 35px;
+    }
+
+    .next-matches-nav {
+      margin-bottom: 80px;
+      border-bottom: 1px solid $primary;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: -60px;
+        border: solid $primary;
+        border-width: 1px 1px 0 0;
+        width: 60px;
+        height: 45px;
+      }
+
+      span {
+        font-weight: bold;
+        background-color: $primary;
+        padding: 11px 30px;
+        color: $white;
+
+        &:last-child {
+          opacity: 0.5;
+          margin-left: 8px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .next-matches-content {
+      .next-matches-category {
+        display: flex;
+        position: relative;
+        margin-bottom: 80px;
+
+        .next-match-container {
+          &.fixed-match {
+            color: $white;
+            display: block;
+            z-index: 1;
+            position: absolute;
+            top: -17px;
+            left: 35px;
+            height: calc(100% + 0px);
+            padding: 60px 35px 260px 60px;
+
+          }
+
+          .next-match-teams {
+
+          }
+          .next-game-desc {
+
+          }
+        }
+      }
+    }
+  }
 }

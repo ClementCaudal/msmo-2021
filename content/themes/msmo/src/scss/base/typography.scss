@@ -93,14 +93,14 @@ body{
 		font-weight: bold;
 		font-size: 48px;
 		text-transform: uppercase;
-		color: $gray-900;
+		color: $gray-800;
 	}
 
 	.title-2{
 		font-family: "Helvetica Neue Condensed";
 		font-weight: bold;
 		font-size: 36px;
-		color: $gray-900;
+		color: $gray-800;
 
 		@include media-breakpoint-down(sm){
 			font-family: "Helvetica Neue Condensed";
@@ -113,7 +113,7 @@ body{
 		font-family: "Helvetica Neue Condensed";
 		font-weight: normal;
 		font-size: 26px;
-		color: $gray-900;
+		color: $gray-800;
 
 		@include media-breakpoint-down(sm){
 			font-family: "Helvetica Neue Condensed";
@@ -179,8 +179,12 @@ body{
 		}
 	}
 
+	span {
+		font-size: 16px;
+	}
+
 	.container-lg{
-		max-width: 1600px;
+		max-width: 1500px;
 	}
 
 	.light{

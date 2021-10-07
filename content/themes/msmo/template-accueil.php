@@ -90,13 +90,71 @@ $slides = get_field('home_slider');
             </ul>
         </div>
     </div>
-    <div class="container">
-        <div class="row facebook-infos-container">
-            <div class="col-6">
-
+    <div class="container-fluid container-lg">
+        <div class="next-matches-container">
+            <h2 class="title-2">Prochaines rencontres</h2>
+            <div class="next-matches-nav">
+                <span class="next-macthes-nav-item">Sam. 09 Oct.</span>
+                <span class="next-macthes-nav-item">Dim. 10 Oct.</span>
             </div>
-            <div class="col-6">
-
+            <div id="next-matches-saturday" class="next-matches-content">
+                <div class="next-matches-category" data-category="féminin">
+                    <div class="next-match-container fixed-match col-4" data-category="féminin">
+                        <div class="next-match-teams">
+                            <span>ROCHE VENDEE BC - 2</span>
+                            <a href="#TEAMURL">U18 féminines 2</a>
+                        </div>
+                        <div class="next-game-desc">
+                            <time datetime="2021-10-09">16h00</time>
+                            <address>SALLE DE LA COURTAISIERE</address>
+                        </div>
+                    </div>
+<!--                    <div class="next-game-slider slick-initialized slick-slider col-12">-->
+<!--                        <div class="slick-list draggable">-->
+<!--                            <div class="slick-track" style="opacity: 1; width: 1242px; left: 0px;">-->
+<!--                                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 414px;">-->
+<!--                                    <div>-->
+<!--                                        <div class="next-game-match first-game front-game" data-watermark="féminin" style="width: 100%; display: inline-block;">-->
+<!--                                            <div class="next-game-vs"><span>ROCHE VENDEE BC - 2</span>-->
+<!--                                                <a href="#TEAMURL" tabindex="0">U18 féminines 2</a>-->
+<!--                                            </div>-->
+<!--                                            <div class="next-game-meta">-->
+<!--                                                <time datetime="2021-10-09">16h00</time>-->
+<!--                                                <address>SALLE DE LA COURTAISIERE</address>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 414px;"><div><div class="next-game-match " data-watermark="féminin" style="width: 100%; display: inline-block;">-->
+<!--                                            <div class="next-game-vs">-->
+<!--                                                <span>SAUMUR LOIRE BASKET 49</span>-->
+<!--                                                <a href="#TEAMURL" tabindex="0">U15 féminines 2</a>-->
+<!--                                            </div>-->
+<!--                                            <div class="next-game-meta">-->
+<!--                                                <time datetime="2021-10-09">14h00</time>-->
+<!--                                                <address>GYMNASE CLOS COUTARD</address>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 414px;">-->
+<!--                                    <div>-->
+<!--                                        <div class="next-game-match " data-watermark="féminin" style="width: 100%; display: inline-block;">-->
+<!--                                            <div class="next-game-vs">-->
+<!--                                                <span>COULAINES J.S.</span>-->
+<!--                                                <a href="#TEAMURL" tabindex="0">U13 féminines 1</a>-->
+<!--                                            </div>-->
+<!--                                            <div class="next-game-meta">-->
+<!--                                                <time datetime="2021-10-09">14h00</time>-->
+<!--                                                <address>GYMNASE MARIUS GUILLOTIN</address>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
             </div>
         </div>
     </div>
